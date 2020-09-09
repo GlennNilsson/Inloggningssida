@@ -6,7 +6,7 @@
     {
         var test = localStorage.getItem("inloggad");
        alert(test);
-        if(test === "notok" || test === "undefined")
+        if(test === "notok")
         {
             var div = document.createElement("Div");
             div.setAttribute("id","div");
