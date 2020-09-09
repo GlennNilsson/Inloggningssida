@@ -4,8 +4,9 @@
     //Idle page is function for creating the idle page
     function IdlePage()
     {
-        //if(localStorage.getItem("inloggad").value !== "ok")
-        //{
+        var test = localStorage.getItem("inloggad");
+        if(test !== "ok")
+        {
             var div = document.createElement("Div");
             div.setAttribute("id","div");
             document.body.appendChild(div);
@@ -35,7 +36,7 @@
             btn.setAttribute("id", "but");
             document.getElementById("div").appendChild(btn);
             document.getElementById("but").addEventListener("click", Inloggad);
-    //}
+    }
 }
 //start page is function for creating start page which is the page that is open when you have logged in
 function StartPage()
