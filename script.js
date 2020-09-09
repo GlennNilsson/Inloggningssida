@@ -5,6 +5,7 @@
     function IdlePage()
     {
         var test = localStorage.getItem("inloggad");
+       alert(test);
         if(test === "notok" || test === "undefined")
         {
             var div = document.createElement("Div");
