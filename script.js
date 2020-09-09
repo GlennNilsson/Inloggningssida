@@ -1,11 +1,11 @@
 
-    localStorage.setItem('inloggad','default'); 
+   
     IdlePage();
     //Idle page is function for creating the idle page
     function IdlePage()
     {
         var test = localStorage.getItem("inloggad");
-        if(test === "notok" || test === "default")
+        if(test === "notok" || test === "undefined")
         {
             var div = document.createElement("Div");
             div.setAttribute("id","div");
