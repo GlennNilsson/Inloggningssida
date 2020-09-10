@@ -1,5 +1,4 @@
 //Start correct page depending on localstorage value
-localStorage.clear();
 if(localStorage.getItem("inloggad") === "ok")
 {
     StartPage();
